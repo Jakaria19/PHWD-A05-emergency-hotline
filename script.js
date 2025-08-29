@@ -15,6 +15,7 @@ for (let heartIcon of heartIcons) {
 }
 
 //* Call Buttons
+
 const callButtons = document.getElementsByClassName("click-call-btn");
 
 for (let callButton of callButtons) {
@@ -30,7 +31,9 @@ for (let callButton of callButtons) {
     const card = callButton.parentNode.parentNode;
 
     const h1Tags = card.querySelectorAll("h1");
+
     const serviceName = h1Tags[0].innerText;
+
     const serviceNumber = h1Tags[1].innerText;
 
     const date = new Date().toLocaleTimeString();
@@ -96,5 +99,6 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   const callHistoryContainer = document.getElementById(
     "call-history-container"
   );
+
   callHistoryContainer.innerText = "";
 });
