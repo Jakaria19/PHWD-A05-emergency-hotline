@@ -24,6 +24,11 @@ for (let callButton of callButtons) {
       document.getElementById("count-call-coin").innerText
     );
 
+    if (callCoin < 20) {
+      alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
+      return;
+    }
+
     const newCallCoin = callCoin - 20;
 
     document.getElementById("count-call-coin").innerText = newCallCoin;
@@ -56,12 +61,7 @@ for (let callButton of callButtons) {
 
     callHistoryContainer.appendChild(div);
 
-    if (callCoin < 20) {
-      alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
-      return;
-    } else {
-      alert("Calling: " + serviceName + " -- " + serviceNumber);
-    }
+    alert("Calling: " + serviceName + " -- " + serviceNumber);
   });
 }
 
@@ -71,8 +71,6 @@ const copyButtons = document.getElementsByClassName("click-copy-btn");
 
 for (let copyButton of copyButtons) {
   copyButton.addEventListener("click", function () {
-    // alert("নম্বরটি কপি হয়েছে");
-
     const copyButtonCount = parseInt(
       document.getElementById("count-copy-btn").innerText
     );
@@ -89,7 +87,7 @@ for (let copyButton of copyButtons) {
 
     navigator.clipboard.writeText(serviceNumber);
 
-    alert("Copied the text: " + serviceNumber);
+    alert("Copied the number: " + serviceNumber);
   });
 }
 
