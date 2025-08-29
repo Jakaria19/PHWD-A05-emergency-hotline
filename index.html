@@ -60,7 +60,7 @@
 
                 <div class="bg-[#00A63E] rounded-3xl px-3 py-1 md:px-5 md:py-2">
 
-                    <h1 class="font-bold text-white"><span>0</span> Copy</h1>
+                    <h1 class="font-bold text-white"><span id="count-copy-btn">0</span> Copy</h1>
 
                 </div>
 
@@ -94,7 +94,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">সার্বজনীন</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -117,7 +117,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">পুলিশ</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -140,7 +140,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">ফায়ার</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -163,7 +163,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">স্বাস্থ্য</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -186,7 +186,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">সহায়তা</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -209,7 +209,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">সরকারি</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -232,7 +232,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">বিদ্যুৎ</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -255,7 +255,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">এনজিও</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -278,7 +278,7 @@
             <p class="text-sm text-gray-700 bg-[#F2F2F2] p-3 rounded-2xl inline-block">পরিবহন</p>
 
             <div class="w-full flex justify-center gap-3 mt-3">
-                <button class="btn btn-outline w-1/2 border-gray-400 text-gray-700">
+                <button class="click-copy-btn btn btn-outline w-1/2 border-gray-400 text-gray-700">
                     <i class="fa-regular fa-copy"></i>
                     Copy
                 </button>
@@ -297,8 +297,14 @@
                     <h1 class="font-bold">Call History</h1>
                 </div>
 
-                <button class="btn btn-active btn-success w-1/2 text-white rounded-3xl bg-[#00A63E]">Clear</button>
+                <button id="clear-btn"
+                    class="btn btn-active btn-success w-1/2 text-white rounded-3xl bg-[#00A63E]">Clear</button>
             </div>
+
+            <div id="call-history-container">
+
+            </div>
+
         </div>
     </main>
 
